@@ -17,13 +17,12 @@ var __nevbarBtn = document.getElementById('myNavBarId').getElementsByTagName('a'
 var __menuDefaultPos = true;
 var __downloadBtn = document.getElementById('downloadBtn');
 
-function __toggleMenuContent(){   
-   // console.log('__menuDefaultPos  ==  '+__menuDefaultPos); 
+function __toggleMenuContent(){     
     if(__menuDefaultPos === true){
         __menuIcon.style.backgroundPosition = 'right';
         __nevbar.style.left = '0';
         __menuDefaultPos=false;
-        //console.log('__menuDefaultPos  ==  '+__menuDefaultPos); 
+  
     }else{
             if(__menuDefaultPos === false){
             __nevbar.style.left = '-100%'; 
@@ -69,23 +68,22 @@ let __thumbMum = document.getElementsByClassName('project');
 let __LargeThum = document.getElementsByClassName   ('lThumb'); 
 let __mySubjectListArr=["pencil","colorPencil","oilPastel","posterColor","Acrylic","OilPaint"]; 
 
-/*document.querySelector('.project').onclick=__photoLoad;*/
 document.querySelector(".popup-img span").onclick = __photoHide;
 
  
 function __photoLoad(){       
     for(let index=0; index<__thumbMum.length; index++){      
         __thumbMum[index].onclick=function(){            
-            __selectCategory(index);           
+        __selectCategory(index);               
         }                   
     }   
 }      
        
-function __selectCategory(n){    
-  
-    window.open(__mySubjectListArr[n]+".html", "_blank");
-    console .log("__mySubjectListArr[n]   =   "+__mySubjectListArr[n]);  
-    window.open('','_self').close();    
+function __selectCategory(n){ 
+     window.close();   
+    window.open(__mySubjectListArr[n]+".html", "_blank");         
+    console.log("Close Current window  !");   
+       
     }
 
 function __photoHide(){               
