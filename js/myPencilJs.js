@@ -9,10 +9,12 @@ window.addEventListener("scroll",function(){
 var __nevbar = document.getElementById("myNavBarId");  
 var __menuIcon = document.getElementById("menu-icon");
 var __nevbarBtn = document.getElementById('myNavBarId').getElementsByTagName('a');
-
+var __omePage = document.getElementById"homeImg");
 var __menuDefaultPos = true;
 
-document.querySelector("#homeImg").onclick = __goToHomePage;
+__omePage.onclick = function(){
+    __goToHomePage;   
+} 
 function __goToHomePage(){
     window.open('https://myprofilesport.github.io/artwork.github.in/','_self').close();
 }

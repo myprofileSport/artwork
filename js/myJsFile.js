@@ -78,16 +78,14 @@ function __photoLoad(){
         __thumbMum[index].onclick=function(){            
             __selectCategory(index);           
         }                   
-    }
-  
+    }   
 }      
        
 function __selectCategory(n){    
   
     window.open(__mySubjectListArr[n]+".html", "_blank");
-    console .log("__mySubjectListArr[n]   =   "+__mySubjectListArr[n])
-      
-    window.open('','_self').close();
+    console .log("__mySubjectListArr[n]   =   "+__mySubjectListArr[n]);  
+    window.open('','_self').close();    
     }
 
 function __photoHide(){               
