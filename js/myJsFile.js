@@ -76,24 +76,18 @@ document.querySelector(".popup-img span").onclick = __photoHide;
 function __photoLoad(){       
     for(let index=0; index<__thumbMum.length; index++){      
         __thumbMum[index].onclick=function(){            
-            __showLargePhoto(index);           
+            __selectCategory(index);           
         }                   
     }
   
 }      
        
-function __showLargePhoto(n){    
+function __selectCategory(n){    
   
     window.open(__mySubjectListArr[n]+".html", "_blank");
     console .log("__mySubjectListArr[n]   =   "+__mySubjectListArr[n])
-
-         /*for (let i=0; i < __LargeThum.length; i++){  
-             
-             console.log("_popNum ============ "+ __LargeThum[n]);  
-             __LargeThum[i].style.display='none';                        
-         }   
-         document.querySelector(".popup-img").style.display='block';  
-         __LargeThum[n].style.display='block'; */
+      
+    window.open('','_self').close();
     }
 
 function __photoHide(){               
